@@ -27,10 +27,9 @@ TAG=`cat package.json|jsonValue version 1`
 IMAGE=$NAME
 
 # Prepare build directory
-CACHE_DIR=/tmp/buildstep/$NAME
+CACHE_DIR=/tmp/dib/images/$NAME
 rm -Rf $CACHE_DIR
 mkdir -p $CACHE_DIR
-echo $CACHE_DIR
 
 # Copy files to build directory
 RSYNC_OPTS="-a --delete"
@@ -74,6 +73,9 @@ docker build -t $IMAGE .
 if [ ! -z $TAG ]; then
 	docker tag $IMAGE $NAME:$TAG
 fi
+
+# Cleanup
+#rm -Rf $CACHE_DIR
 
 # Done
 echo "Created $IMAGE"
