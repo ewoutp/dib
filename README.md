@@ -9,8 +9,8 @@ Why
 Various tools exist (like progrium/buildstep) that can build Docker images from a git repository.
 This tools is a little bit different:
 
-1) It works from a locally cloned repository (or even if you have just a folder).
-2) It does not require any kind of git access control inside your Docker container, so perfect for private repositories.
+1. It works from a locally cloned repository (or even if you have just a folder).
+2. It does not require any kind of git access control inside your Docker container, so perfect for private repositories.
 
 Requirements
 ============
