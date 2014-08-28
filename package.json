@@ -1,6 +1,6 @@
 {
   "name": "dib",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Docker image builder for (mostly) Node.js oriented images.",
   "homepage": "http://github.com/ewoutp/dib",
   "repository": {

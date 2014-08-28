@@ -78,4 +78,4 @@ fi
 #rm -Rf $CACHE_DIR
 
 # Done
-echo "Created $IMAGE"
+echo "Created $IMAGE $TAG"
