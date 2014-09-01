@@ -12,5 +12,8 @@
   },
   "dependencies": {},
   "devDependencies": {},
-  "author": "Ewout Prangsma [github:ewoutp]"
+  "author": "Ewout Prangsma [github:ewoutp]",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  }
 }
